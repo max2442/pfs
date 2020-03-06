@@ -21,7 +21,7 @@ class AntennaDeployer(Submodule):
         :return: None
         """
         # Initialize connection with device
-        isisants.py_k_ants_init(b"/dev/i2c-1", 0x31, 0x32, 4, 10)
+        isisants.py_k_ants_init(b"/dev/i2c-1", 0x2b, 0x32, 4, 10)
 
         # Arms device
         isisants.py_k_ants_arm()
